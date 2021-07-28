@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(78, 78, 78);
+    color: rgb(15, 194, 194);
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main h1 {
+    color: rgb(159, 75, 255);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+main .alternative {
+    margin-top: 1rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(159, 75, 255);
+    position: relative;
+}
+
+main form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    background: rgb(159, 75, 255);
+    bottom: 50%;
+    right: 50px;
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    width: 300px;
+    height: 40px;
+    padding: 0 0.5rem;
+    outline: none;
+    border: 3px solid blueviolet;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2rem;
+    border-radius: 32px;
+    font-size: larger;
+    background: cornflowerblue;
+    transition: all .2s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: rgb(24, 101, 243);
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem;
+}
+
